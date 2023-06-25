@@ -632,10 +632,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/images\/bg-pattern-card\.svg\'\)\] {
-  background-image: url('./images/bg-pattern-card.svg');
-}
-
 .bg-pattern-background-top {
   background-image: url('/images/bg-pattern-top.svg');
 }
@@ -693,4 +689,3 @@ video {
 .bg-blend-soft-light {
   background-blend-mode: soft-light;
 }
-
