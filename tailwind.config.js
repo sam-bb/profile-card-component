@@ -1,7 +1,6 @@
 module.exports = {
   content: ["./**.{html,js}"],
   theme: {
-
     extend: {
       backgroundImage: {
         "pattern-background-top": "url('/images/bg-pattern-top.svg')",
@@ -16,7 +15,6 @@ module.exports = {
     fontFamily: {
       custom: ["Kumbh Sans", "sans-serif"],
     },
-
   },
   plugins: [],
 };
