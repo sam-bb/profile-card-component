@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Profile card component</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
+  <body
+    class="font-custom bg-blend-soft-light bg-[#19a2ae] bg-pattern-background-top"
+  >
+    <div class="flex items-center justify-center min-h-screen px-4">
+      <div class="bg-white relative rounded-2xl overflow-hidden">
+        <!-- top form pattern  -->
+        <div class="relative bg-[url('./images/bg-pattern-card.svg')]">
+          <img class="w-full" src="/images/bg-pattern-card.svg" alt="top" />
 
-  80K
-  Followers
+          <!-- avatar -->
+          <img
+            class="absolute bottom-0 left-1/2 -ml-16 transform translate-x-1/2 translate-y-1/2 rounded-full border-4 border-white"
+            src="./images/image-victor.jpg"
+            alt="avatar"
+          />
+        </div>
 
-  803K
-  Likes
+        <!-- infomation section -->
+        <div>
+          <div class="flex pt-14 flex-col items-center justify-center">
+            <div class="font-bold">
+              Victor Crest
+              <span class="font-thin text-[#6a6f81]">&nbsp;&nbsp;26</span>
+            </div>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <span class="text-sm pt-2 pb-6 text-[#6a6f81]">London</span>
+          </div>
+
+          <div class="border-t border-gray-200 h-px pb-4"></div>
+
+          <div class="grid grid-cols-3 pb-4">
+            <div class="flex flex-col justify-center items-center">
+              <span class="font-extrabold">80K</span>
+              <div class="text-xxs tracking-widest">Followers</div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+              <span class="font-extrabold">803K</span>
+              <div class="text-xxs tracking-widest">Likes</div>
+            </div>
+
+            <div class="flex flex-col justify-center items-center">
+              <span class="font-extrabold">1.4K</span>
+              <div class="text-xxs tracking-widest">Photos</div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
